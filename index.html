@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CozyCup Café - Your neighborhood coffee destination." />
+  <title>CozyCup Café - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">☕ CozyCup Café</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Image Slider -->
+  <section class="hero">
+    <div class="hero-slider">
+      <div class="slide active" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+        <div class="slide-content">
+          <h1>Welcome to CozyCup Café</h1>
+          <p>Your neighborhood coffee destination for premium brews, cozy atmosphere, and memorable moments</p>
+          <a href="#" class="btn cta-btn">Order Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+        <div class="slide-content">
+          <h1>Artisan Coffee Experience</h1>
+          <p>Discover our carefully crafted espresso drinks and specialty beverages made with love</p>
+          <a href="#" class="btn cta-btn">View Menu <i class="fas fa-utensils"></i></a>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+        <div class="slide-content">
+          <h1>Cozy Atmosphere</h1>
+          <p>Perfect place for work, study, or catching up with friends in a welcoming environment</p>
+          <a href="#" class="btn cta-btn">Visit Us <i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots">
+      <span class="dot active" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="card">
+      <div class="card-img" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+      </div>
+      <div class="card-content">
+        <h3>Artisan Drinks</h3>
+        <p>Discover our carefully curated selection of premium coffee beans, expertly crafted espresso drinks, and specialty beverages made fresh daily.</p>
+        <a href="#" class="btn">View Menu <i class="fas fa-utensils"></i></a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img" style="background-image: url('https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+      </div>
+      <div class="card-content">
+        <h3>Warm Ambiance</h3>
+        <p>Relax in our comfortable seating areas, perfect for work, study, or catching up with friends in a welcoming atmosphere.</p>
+        <a href="#" class="btn">See Gallery <i class="fas fa-images"></i></a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img" style="background-image: url('https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+      </div>
+      <div class="card-content">
+        <h3>Special Offers</h3>
+        <p>Join our loyalty program and enjoy exclusive discounts, seasonal specials, and member-only events throughout the year.</p>
+        <a href="#" class="btn">Learn More <i class="fas fa-heart"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4><i class="fas fa-share-alt"></i> Follow Us</h4>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4><i class="fas fa-clock"></i> Operating Hours</h4>
+        <p>
+          Monday - Friday: 8:00 AM – 8:00 PM<br />
+          Saturday: 7:00 AM – 8:00 PM<br />
+          Sunday: 8:00 AM – 6:00 PM
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4><i class="fas fa-envelope"></i> Contact Us</h4>
+        <p>
+          <i class="fas fa-envelope"></i> hello@cozycupcafe.com<br />
+          <i class="fas fa-phone"></i> (555) 123-4567
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 CozyCup Café. All rights reserved. | Made with <i class="fas fa-heart" style="color: #f093fb;"></i> for coffee lovers
+    </div>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("dot");
+      
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].classList.remove("active");
+      }
+      
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].classList.add("active");
+      
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+
+    function currentSlide(n) {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("dot");
+      
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].classList.remove("active");
+      }
+      
+      slides[n-1].style.display = "block";
+      dots[n-1].classList.add("active");
+      slideIndex = n;
+    }
+  </script>
+
+</body>
+</html>

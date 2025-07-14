@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CozyCup Café - Upcoming events and activities." />
+  <title>CozyCup Café - Events</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="events-styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">☕ CozyCup Café</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Events Hero -->
+  <section class="events-hero">
+    <div class="events-hero-content">
+      <h1>Upcoming Events</h1>
+      <p>Join us for coffee tastings, live music, and community gatherings</p>
+    </div>
+  </section>
+
+  <!-- Featured Event -->
+  <section class="featured-event">
+    <div class="container">
+      <div class="featured-content">
+        <div class="featured-image">
+          <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Coffee Tasting Event">
+          <div class="event-badge">Featured Event</div>
+        </div>
+        <div class="featured-details">
+          <h2>Monthly Coffee Tasting</h2>
+          <div class="event-meta">
+            <span><i class="fas fa-calendar"></i> Every First Saturday</span>
+            <span><i class="fas fa-clock"></i> 2:00 PM - 4:00 PM</span>
+            <span><i class="fas fa-map-marker-alt"></i> CozyCup Café</span>
+          </div>
+          <p>Join our expert baristas for an educational coffee tasting experience. Learn about different coffee origins, brewing methods, and flavor profiles. Perfect for coffee enthusiasts and beginners alike!</p>
+          <div class="event-features">
+            <span><i class="fas fa-users"></i> Max 20 people</span>
+            <span><i class="fas fa-dollar-sign"></i> $25 per person</span>
+            <span><i class="fas fa-coffee"></i> Coffee samples included</span>
+          </div>
+          <button class="register-btn" onclick="registerEvent('coffee-tasting')">Register Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Grid -->
+  <section class="events-grid">
+    <div class="container">
+      <h2>All Events</h2>
+      <div class="events-container">
+        <div class="event-card">
+          <div class="event-image">
+            <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Live Music Night">
+            <div class="event-date">
+              <span class="day">15</span>
+              <span class="month">Dec</span>
+            </div>
+          </div>
+          <div class="event-content">
+            <h3>Live Music Night</h3>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 7:00 PM - 9:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> CozyCup Café</span>
+            </div>
+            <p>Enjoy live acoustic music from local artists while sipping your favorite coffee. A perfect evening for music lovers!</p>
+            <div class="event-footer">
+              <span class="price">Free Entry</span>
+              <button class="register-btn small" onclick="registerEvent('live-music')">Join Us</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-image">
+            <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Barista Workshop">
+            <div class="event-date">
+              <span class="day">22</span>
+              <span class="month">Dec</span>
+            </div>
+          </div>
+          <div class="event-content">
+            <h3>Barista Workshop</h3>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 10:00 AM - 12:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> CozyCup Café</span>
+            </div>
+            <p>Learn the art of coffee making from our expert baristas. Master espresso, latte art, and brewing techniques.</p>
+            <div class="event-footer">
+              <span class="price">$35</span>
+              <button class="register-btn small" onclick="registerEvent('barista-workshop')">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-image">
+            <img src="https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Book Club">
+            <div class="event-date">
+              <span class="day">28</span>
+              <span class="month">Dec</span>
+            </div>
+          </div>
+          <div class="event-content">
+            <h3>Book Club Meeting</h3>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 6:00 PM - 8:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> CozyCup Café</span>
+            </div>
+            <p>Join our monthly book club discussion. This month we're reading "The Coffee Trader" by David Liss.</p>
+            <div class="event-footer">
+              <span class="price">Free</span>
+              <button class="register-btn small" onclick="registerEvent('book-club')">Join Club</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-image">
+            <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Art Exhibition">
+            <div class="event-date">
+              <span class="day">05</span>
+              <span class="month">Jan</span>
+            </div>
+          </div>
+          <div class="event-content">
+            <h3>Local Art Exhibition</h3>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 5:00 PM - 8:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> CozyCup Café</span>
+            </div>
+            <p>Support local artists with our monthly art exhibition. Enjoy beautiful artwork while sipping coffee.</p>
+            <div class="event-footer">
+              <span class="price">Free Entry</span>
+              <button class="register-btn small" onclick="registerEvent('art-exhibition')">Attend</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-image">
+            <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Coffee & Conversation">
+            <div class="event-date">
+              <span class="day">12</span>
+              <span class="month">Jan</span>
+            </div>
+          </div>
+          <div class="event-content">
+            <h3>Coffee & Conversation</h3>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 3:00 PM - 5:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> CozyCup Café</span>
+            </div>
+            <p>An open forum for coffee lovers to share experiences, tips, and stories. Great networking opportunity!</p>
+            <div class="event-footer">
+              <span class="price">Free</span>
+              <button class="register-btn small" onclick="registerEvent('coffee-conversation')">Join</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-image">
+            <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Brewing Masterclass">
+            <div class="event-date">
+              <span class="day">19</span>
+              <span class="month">Jan</span>
+            </div>
+          </div>
+          <div class="event-content">
+            <h3>Brewing Masterclass</h3>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 11:00 AM - 1:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> CozyCup Café</span>
+            </div>
+            <p>Master the art of brewing with different methods: French Press, Pour Over, and Aeropress.</p>
+            <div class="event-footer">
+              <span class="price">$30</span>
+              <button class="register-btn small" onclick="registerEvent('brewing-masterclass')">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Modal -->
+  <div class="modal" id="registrationModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <h2>Event Registration</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="guests">Number of Guests</label>
+          <select id="guests" name="guests">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Special Requests</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Confirm Registration</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4><i class="fas fa-share-alt"></i> Follow Us</h4>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4><i class="fas fa-clock"></i> Operating Hours</h4>
+        <p>
+          Monday - Friday: 8:00 AM – 8:00 PM<br />
+          Saturday: 7:00 AM – 8:00 PM<br />
+          Sunday: 8:00 AM – 6:00 PM
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4><i class="fas fa-envelope"></i> Contact Us</h4>
+        <p>
+          <i class="fas fa-envelope"></i> hello@cozycupcafe.com<br />
+          <i class="fas fa-phone"></i> (555) 123-4567
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 CozyCup Café. All rights reserved. | Made with <i class="fas fa-heart" style="color: #f093fb;"></i> for coffee lovers
+    </div>
+  </footer>
+
+  <script>
+    function registerEvent(eventType) {
+      const modal = document.getElementById('registrationModal');
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      
+      // Set event type in form
+      const form = document.getElementById('registrationForm');
+      form.setAttribute('data-event', eventType);
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('registrationModal');
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Handle form submission
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const eventType = this.getAttribute('data-event');
+      const formData = new FormData(this);
+      
+      // Simulate registration
+      alert('Thank you for registering! We will send you a confirmation email shortly.');
+      closeModal();
+      this.reset();
+    });
+
+    // Close modal when clicking outside
+    document.getElementById('registrationModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+
+    // Close modal with escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html> 

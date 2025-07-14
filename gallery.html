@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CozyCup Café - Photo gallery of our café and coffee." />
+  <title>CozyCup Café - Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="gallery-styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">☕ CozyCup Café</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Gallery Hero -->
+  <section class="gallery-hero">
+    <div class="gallery-hero-content">
+      <h1>Our Gallery</h1>
+      <p>Take a visual journey through our café, coffee, and community</p>
+    </div>
+  </section>
+
+  <!-- Gallery Filter -->
+  <section class="gallery-filter">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+        <button class="filter-btn" onclick="filterGallery('coffee')">Coffee</button>
+        <button class="filter-btn" onclick="filterGallery('cafe')">Café</button>
+        <button class="filter-btn" onclick="filterGallery('food')">Food</button>
+        <button class="filter-btn" onclick="filterGallery('events')">Events</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-grid">
+    <div class="container">
+      <div class="gallery-container">
+        <!-- Coffee Images -->
+        <div class="gallery-item coffee" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Coffee Art">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Latte Art</h3>
+            <p>Beautiful coffee creations</p>
+          </div>
+        </div>
+
+        <div class="gallery-item coffee" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Espresso">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Perfect Espresso</h3>
+            <p>Rich and aromatic</p>
+          </div>
+        </div>
+
+        <div class="gallery-item coffee" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Coffee Beans">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Premium Beans</h3>
+            <p>Carefully selected</p>
+          </div>
+        </div>
+
+        <!-- Café Images -->
+        <div class="gallery-item cafe" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Café Interior">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Cozy Interior</h3>
+            <p>Warm and welcoming</p>
+          </div>
+        </div>
+
+        <div class="gallery-item cafe" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Barista">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Expert Barista</h3>
+            <p>Skilled craftsmanship</p>
+          </div>
+        </div>
+
+        <div class="gallery-item cafe" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Seating Area">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Comfortable Seating</h3>
+            <p>Perfect for work or relaxation</p>
+          </div>
+        </div>
+
+        <!-- Food Images -->
+        <div class="gallery-item food" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pastries">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Fresh Pastries</h3>
+            <p>Baked daily</p>
+          </div>
+        </div>
+
+        <div class="gallery-item food" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Breakfast">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Delicious Breakfast</h3>
+            <p>Start your day right</p>
+          </div>
+        </div>
+
+        <div class="gallery-item food" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Desserts">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Sweet Treats</h3>
+            <p>Perfect with coffee</p>
+          </div>
+        </div>
+
+        <!-- Events Images -->
+        <div class="gallery-item events" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Coffee Tasting">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Coffee Tasting</h3>
+            <p>Learn about coffee</p>
+          </div>
+        </div>
+
+        <div class="gallery-item events" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Live Music">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Live Music Nights</h3>
+            <p>Local artists</p>
+          </div>
+        </div>
+
+        <div class="gallery-item events" onclick="openLightbox(this)">
+          <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Community">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3>Community Events</h3>
+            <p>Bringing people together</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content">
+      <span class="close-btn" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-img" src="" alt="">
+      <div class="lightbox-caption">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4><i class="fas fa-share-alt"></i> Follow Us</h4>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4><i class="fas fa-clock"></i> Operating Hours</h4>
+        <p>
+          Monday - Friday: 8:00 AM – 8:00 PM<br />
+          Saturday: 7:00 AM – 8:00 PM<br />
+          Sunday: 8:00 AM – 6:00 PM
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4><i class="fas fa-envelope"></i> Contact Us</h4>
+        <p>
+          <i class="fas fa-envelope"></i> hello@cozycupcafe.com<br />
+          <i class="fas fa-phone"></i> (555) 123-4567
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 CozyCup Café. All rights reserved. | Made with <i class="fas fa-heart" style="color: #f093fb;"></i> for coffee lovers
+    </div>
+  </footer>
+
+  <script>
+    function filterGallery(category) {
+      const items = document.querySelectorAll('.gallery-item');
+      const buttons = document.querySelectorAll('.filter-btn');
+      
+      // Remove active class from all buttons
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      event.target.classList.add('active');
+      
+      // Show/hide items based on category
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
+          item.style.animation = 'fadeIn 0.5s ease-in-out';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function openLightbox(item) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxTitle = document.getElementById('lightbox-title');
+      const lightboxDescription = document.getElementById('lightbox-description');
+      
+      const img = item.querySelector('img');
+      const title = item.querySelector('h3').textContent;
+      const description = item.querySelector('p').textContent;
+      
+      lightboxImg.src = img.src;
+      lightboxTitle.textContent = title;
+      lightboxDescription.textContent = description;
+      
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close lightbox with escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+  </script>
+
+</body>
+</html> 

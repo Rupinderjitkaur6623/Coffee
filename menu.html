@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CozyCup Café - Our delicious menu of coffee and treats." />
+  <title>CozyCup Café - Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="menu-styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">☕ CozyCup Café</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Menu Hero -->
+  <section class="menu-hero">
+    <div class="menu-hero-content">
+      <h1>Our Menu</h1>
+      <p>Discover our carefully crafted selection of coffee, treats, and more</p>
+    </div>
+  </section>
+
+  <!-- Menu Categories -->
+  <section class="menu-categories">
+    <div class="category-tabs">
+      <button class="tab-btn active" onclick="showCategory('coffee')">Coffee</button>
+      <button class="tab-btn" onclick="showCategory('espresso')">Espresso</button>
+      <button class="tab-btn" onclick="showCategory('tea')">Tea</button>
+      <button class="tab-btn" onclick="showCategory('food')">Food</button>
+      <button class="tab-btn" onclick="showCategory('desserts')">Desserts</button>
+    </div>
+
+    <!-- Coffee Category -->
+    <div class="menu-section active" id="coffee">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Classic Drip Coffee</h3>
+            <p>Freshly brewed coffee made from our premium beans</p>
+            <div class="menu-item-footer">
+              <span class="price">$3.50</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Pour Over Coffee</h3>
+            <p>Hand-crafted pour over coffee for the perfect brew</p>
+            <div class="menu-item-footer">
+              <span class="price">$4.50</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>French Press</h3>
+            <p>Rich and full-bodied coffee brewed in a French press</p>
+            <div class="menu-item-footer">
+              <span class="price">$4.00</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Espresso Category -->
+    <div class="menu-section" id="espresso">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Espresso Shot</h3>
+            <p>Single shot of our signature espresso blend</p>
+            <div class="menu-item-footer">
+              <span class="price">$2.50</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Cappuccino</h3>
+            <p>Perfectly balanced espresso, steamed milk, and foam</p>
+            <div class="menu-item-footer">
+              <span class="price">$4.75</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Latte</h3>
+            <p>Smooth espresso with velvety steamed milk</p>
+            <div class="menu-item-footer">
+              <span class="price">$5.00</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tea Category -->
+    <div class="menu-section" id="tea">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Earl Grey Tea</h3>
+            <p>Classic black tea with bergamot oil</p>
+            <div class="menu-item-footer">
+              <span class="price">$3.00</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Green Tea</h3>
+            <p>Refreshing and healthy green tea</p>
+            <div class="menu-item-footer">
+              <span class="price">$3.25</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Chai Latte</h3>
+            <p>Spiced tea with steamed milk and honey</p>
+            <div class="menu-item-footer">
+              <span class="price">$4.50</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Category -->
+    <div class="menu-section" id="food">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Avocado Toast</h3>
+            <p>Fresh avocado on artisan bread with herbs</p>
+            <div class="menu-item-footer">
+              <span class="price">$8.50</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Breakfast Sandwich</h3>
+            <p>Egg, cheese, and bacon on a croissant</p>
+            <div class="menu-item-footer">
+              <span class="price">$7.50</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Quiche Lorraine</h3>
+            <p>Classic quiche with bacon and cheese</p>
+            <div class="menu-item-footer">
+              <span class="price">$9.00</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desserts Category -->
+    <div class="menu-section" id="desserts">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Chocolate Croissant</h3>
+            <p>Buttery croissant filled with dark chocolate</p>
+            <div class="menu-item-footer">
+              <span class="price">$4.50</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Tiramisu</h3>
+            <p>Classic Italian dessert with coffee and mascarpone</p>
+            <div class="menu-item-footer">
+              <span class="price">$6.50</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-img" style="background-image: url('https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+          <div class="menu-item-content">
+            <h3>Blueberry Muffin</h3>
+            <p>Fresh baked muffin with wild blueberries</p>
+            <div class="menu-item-footer">
+              <span class="price">$3.75</span>
+              <button class="order-btn">Add to Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4><i class="fas fa-share-alt"></i> Follow Us</h4>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4><i class="fas fa-clock"></i> Operating Hours</h4>
+        <p>
+          Monday - Friday: 8:00 AM – 8:00 PM<br />
+          Saturday: 7:00 AM – 8:00 PM<br />
+          Sunday: 8:00 AM – 6:00 PM
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4><i class="fas fa-envelope"></i> Contact Us</h4>
+        <p>
+          <i class="fas fa-envelope"></i> hello@cozycupcafe.com<br />
+          <i class="fas fa-phone"></i> (555) 123-4567
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 CozyCup Café. All rights reserved. | Made with <i class="fas fa-heart" style="color: #f093fb;"></i> for coffee lovers
+    </div>
+  </footer>
+
+  <script>
+    function showCategory(category) {
+      // Hide all menu sections
+      const sections = document.querySelectorAll('.menu-section');
+      sections.forEach(section => section.classList.remove('active'));
+      
+      // Remove active class from all tabs
+      const tabs = document.querySelectorAll('.tab-btn');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      
+      // Show selected category
+      document.getElementById(category).classList.add('active');
+      
+      // Add active class to clicked tab
+      event.target.classList.add('active');
+    }
+
+    // Add to order functionality
+    document.querySelectorAll('.order-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.textContent = 'Added!';
+        this.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
+        setTimeout(() => {
+          this.textContent = 'Add to Order';
+          this.style.background = 'linear-gradient(135deg, #667eea, #764ba2)';
+        }, 2000);
+      });
+    });
+  </script>
+
+</body>
+</html> 

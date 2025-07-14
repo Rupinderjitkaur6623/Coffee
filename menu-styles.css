@@ -1,0 +1,212 @@
+/* Menu Page Specific Styles */
+
+/* Menu Hero */
+.menu-hero {
+  height: 60vh;
+  background: linear-gradient(135deg, #FFEDD5 0%, #E6CFCF 60%, #C4B5C4 100%),
+              url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-hero-content {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 32px rgba(91, 58, 41, 0.10);
+  border: 1px solid #E6CFCF;
+  display: inline-block;
+}
+
+.menu-hero-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #5B3A29;
+  background: none;
+  text-shadow: none;
+}
+
+.menu-hero-content p {
+  font-size: 24px;
+  color: #D0A79A;
+  text-shadow: none;
+}
+
+/* Menu Categories */
+.menu-categories {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 15px 30px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #4a5568;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(31, 38, 135, 0.1);
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* Menu Sections */
+.menu-section {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.menu-section.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Menu Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Menu Items */
+.menu-item {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(31, 38, 135, 0.15);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(31, 38, 135, 0.25);
+}
+
+.menu-item-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover .menu-item-img {
+  transform: scale(1.05);
+}
+
+.menu-item-content {
+  padding: 25px;
+}
+
+.menu-item-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+.menu-item-content p {
+  color: #4a5568;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.menu-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.order-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #764ba2, #f093fb);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-hero-content h1 {
+    font-size: 36px;
+  }
+  
+  .menu-hero-content p {
+    font-size: 18px;
+  }
+  
+  .category-tabs {
+    gap: 8px;
+  }
+  
+  .tab-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .menu-item-content {
+    padding: 20px;
+  }
+  
+  .menu-item-footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+  
+  .order-btn {
+    width: 100%;
+  }
+} 
