@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CozyCup Café - Your neighborhood coffee destination." />
+  <meta name="description" content="CozyCup Café - Your neighborhood coffee haven" />
   <title>CozyCup Café - Home</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -12,7 +12,23 @@
 
   <!-- Header -->
   <header>
-    <div class="logo">☕ CozyCup Café</div>
+    <div class="logo">
+      <div class="logo-icon">
+        <div class="coffee-cup">
+          <div class="cup-body"></div>
+          <div class="cup-handle"></div>
+          <div class="latte-art">
+            <div class="heart-left"></div>
+            <div class="heart-right"></div>
+            <div class="rosetta-center"></div>
+          </div>
+        </div>
+        <div class="steam steam-1"></div>
+        <div class="steam steam-2"></div>
+        <div class="steam steam-3"></div>
+      </div>
+      <span class="logo-text">CozyCup Café</span>
+    </div>
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -20,6 +36,7 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="events.html">Events</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -31,59 +48,56 @@
       <div class="slide active" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
         <div class="slide-content">
           <h1>Welcome to CozyCup Café</h1>
-          <p>Your neighborhood coffee destination for premium brews, cozy atmosphere, and memorable moments</p>
-          <a href="#" class="btn cta-btn">Order Now <i class="fas fa-arrow-right"></i></a>
+          <p>Where every cup tells a story</p>
+          <a href="menu.html" class="cta-btn">Explore Our Menu</a>
         </div>
       </div>
-      <div class="slide" style="background-image: url('https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+      <div class="slide" style="background-image: url('https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
         <div class="slide-content">
-          <h1>Artisan Coffee Experience</h1>
-          <p>Discover our carefully crafted espresso drinks and specialty beverages made with love</p>
-          <a href="#" class="btn cta-btn">View Menu <i class="fas fa-utensils"></i></a>
+          <h1>Artisan Coffee Crafted with Love</h1>
+          <p>Experience the perfect blend of tradition and innovation</p>
+          <a href="about.html" class="cta-btn">Our Story</a>
         </div>
       </div>
       <div class="slide" style="background-image: url('https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
         <div class="slide-content">
-          <h1>Cozy Atmosphere</h1>
-          <p>Perfect place for work, study, or catching up with friends in a welcoming environment</p>
-          <a href="#" class="btn cta-btn">Visit Us <i class="fas fa-map-marker-alt"></i></a>
+          <h1>Join Our Coffee Community</h1>
+          <p>Connect, relax, and savor the moment</p>
+          <a href="events.html" class="cta-btn">Upcoming Events</a>
         </div>
       </div>
     </div>
     <div class="slider-dots">
-      <span class="dot active" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
   </section>
 
-  <!-- Features Section -->
+  <!-- Feature Cards -->
   <section class="features">
     <div class="card">
-      <div class="card-img" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
-      </div>
+      <div class="card-img" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
       <div class="card-content">
-        <h3>Artisan Drinks</h3>
-        <p>Discover our carefully curated selection of premium coffee beans, expertly crafted espresso drinks, and specialty beverages made fresh daily.</p>
-        <a href="#" class="btn">View Menu <i class="fas fa-utensils"></i></a>
+        <h3>Premium Coffee</h3>
+        <p>Carefully selected beans from around the world, roasted to perfection for the ultimate coffee experience.</p>
+        <a href="menu.html" class="btn">View Menu <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
     <div class="card">
-      <div class="card-img" style="background-image: url('https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
-      </div>
+      <div class="card-img" style="background-image: url('https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
       <div class="card-content">
-        <h3>Warm Ambiance</h3>
-        <p>Relax in our comfortable seating areas, perfect for work, study, or catching up with friends in a welcoming atmosphere.</p>
-        <a href="#" class="btn">See Gallery <i class="fas fa-images"></i></a>
+        <h3>Expert Baristas</h3>
+        <p>Our passionate team of certified baristas craft each drink with precision and artistry.</p>
+        <a href="about.html" class="btn">Meet Our Team <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
     <div class="card">
-      <div class="card-img" style="background-image: url('https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
-      </div>
+      <div class="card-img" style="background-image: url('https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
       <div class="card-content">
-        <h3>Special Offers</h3>
-        <p>Join our loyalty program and enjoy exclusive discounts, seasonal specials, and member-only events throughout the year.</p>
-        <a href="#" class="btn">Learn More <i class="fas fa-heart"></i></a>
+        <h3>Cozy Atmosphere</h3>
+        <p>Relax in our warm, inviting space designed for comfort and connection with friends and family.</p>
+        <a href="gallery.html" class="btn">View Gallery <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
@@ -121,43 +135,35 @@
   </footer>
 
   <script>
-    let slideIndex = 0;
-    showSlides();
+    // Simple image slider functionality
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
 
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("slide");
-      let dots = document.getElementsByClassName("dot");
+    function showSlide(n) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
       
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        dots[i].classList.remove("active");
-      }
-      
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].classList.add("active");
-      
-      setTimeout(showSlides, 5000); // Change image every 5 seconds
+      slides[n].classList.add('active');
+      dots[n].classList.add('active');
     }
 
-    function currentSlide(n) {
-      let i;
-      let slides = document.getElementsByClassName("slide");
-      let dots = document.getElementsByClassName("dot");
-      
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        dots[i].classList.remove("active");
-      }
-      
-      slides[n-1].style.display = "block";
-      dots[n-1].classList.add("active");
-      slideIndex = n;
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
     }
+
+    // Auto-advance slides every 5 seconds
+    setInterval(nextSlide, 5000);
+
+    // Click on dots to navigate
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+      });
+    });
   </script>
 
 </body>
-</html>
+</html> 

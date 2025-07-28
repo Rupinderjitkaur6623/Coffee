@@ -3,7 +3,7 @@
 /* About Hero */
 .about-hero {
   height: 60vh;
-  background: linear-gradient(135deg, #FFEDD5 0%, #E6CFCF 60%, #C4B5C4 100%),
+  background: linear-gradient(135deg, #f5f5f5 0%, #956d56 60%, #7c8575 100%),
               url('https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
   background-position: center;
@@ -19,7 +19,7 @@
   border-radius: 25px;
   padding: 40px 30px;
   box-shadow: 0 8px 32px rgba(91, 58, 41, 0.10);
-  border: 1px solid #E6CFCF;
+  border: 1px solid #956d56;
   display: inline-block;
 }
 
@@ -62,7 +62,7 @@
   font-size: 42px;
   font-weight: 800;
   margin-bottom: 30px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #2e3825, #632a19);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -80,7 +80,7 @@
   height: 400px;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(31, 38, 135, 0.2);
+  box-shadow: 0 15px 35px rgba(46, 56, 37, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -91,7 +91,7 @@
 /* Values Section */
 .values-section {
   padding: 100px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2e3825 0%, #632a19 100%);
   color: white;
 }
 
@@ -163,7 +163,7 @@
   font-size: 42px;
   font-weight: 800;
   margin-bottom: 60px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #2e3825, #632a19);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -179,14 +179,14 @@
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(31, 38, 135, 0.15);
+  box-shadow: 0 10px 30px rgba(46, 56, 37, 0.15);
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
 }
 
 .team-member:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(31, 38, 135, 0.25);
+  box-shadow: 0 20px 40px rgba(46, 56, 37, 0.25);
 }
 
 .member-image {
@@ -219,7 +219,7 @@
 
 .position {
   font-size: 16px;
-  color: #667eea;
+  color: #956d56;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -251,7 +251,7 @@
 .stat-number {
   font-size: 48px;
   font-weight: 800;
-  color: #667eea;
+  color: #956d56;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
